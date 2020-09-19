@@ -4,9 +4,9 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(() => ({
   main: {
-    //  border: "2px solid red",
+    //border: "2px solid red",
     position: "relative",
-    marginTop: "100px",
+    paddingTop: "70px",
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",

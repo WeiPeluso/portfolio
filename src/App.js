@@ -57,7 +57,7 @@ function App() {
           <a className={classes.links} href="#about">
             <h2 className={classes.linkName}>About Me</h2>
           </a>
-          <a className={classes.links} href="#skills">
+          <a className={classes.links} href="#about2">
             <h2 className={classes.linkName}>Skills</h2>
           </a>
           <a className={classes.links} href="#projects">
@@ -72,8 +72,10 @@ function App() {
         </nav>
       </div>
       <div className={classes.content}>
-        <div className={classes.space}></div>
         <div id="about">
+          <AboutMe />
+        </div>
+        <div id="about2">
           <AboutMe />
         </div>
       </div>
