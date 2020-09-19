@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
+import { Link } from "react-router-dom";
+import ContactMe from "./ContactMe";
 function ElevationScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -48,7 +50,11 @@ const Header = () => {
               <Tab className={classes.tab} label="Skills" />
               <Tab className={classes.tab} label="Projects" />
               <Tab className={classes.tab} label="Resume" />
-              <Tab className={classes.tab} label="Contact Me" />
+              <Tab
+                className={classes.tab}
+                label="Contact Me"
+                href="#contactme"
+              />
             </Tabs>
           </Toolbar>
         </AppBar>
