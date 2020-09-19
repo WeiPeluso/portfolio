@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import main from "./assets/main.svg";
+import AboutMe from "./components/ui/AboutMe";
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
 const useStyles = makeStyles(() => ({
@@ -41,16 +42,6 @@ const useStyles = makeStyles(() => ({
     fontWeight: "700",
     fontSize: "1.2rem",
   },
-  // aboutme: {
-  //   position: "relative",
-  //   display: "flex",
-  //   justifyContent: "space-around",
-  //   alignItems: "center",
-  //   flexWrap: "wrap",
-  //   flexDirection: "row",
-  //   width: "100%",
-  //   height: "700px",
-  // },
 }));
 function App() {
   const classes = useStyles();
@@ -82,11 +73,9 @@ function App() {
         </nav>
       </div>
       <div className={classes.content}>
-        <img src={main} />
         <div className={classes.space}></div>
-        <div id="about" className={classes.aboutme}>
-          <p>about me</p>
-          <img src={main} />
+        <div id="about">
+          <AboutMe />
         </div>
         <div id="skills" className={classes.skills}>
           <p>skills</p>
