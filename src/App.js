@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
-import main from "./assets/main.svg";
 import AboutMe from "./components/ui/AboutMe";
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
@@ -76,18 +75,6 @@ function App() {
         <div className={classes.space}></div>
         <div id="about">
           <AboutMe />
-        </div>
-        <div id="skills" className={classes.skills}>
-          <p>skills</p>
-          <img src={main} />
-        </div>
-        <div id="projects">
-          <p>project</p>
-          <img src={main} />
-        </div>
-        <div>
-          <p>contact me</p>
-          <img src={main} />
         </div>
       </div>
     </React.Fragment>
