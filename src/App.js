@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import AboutMe from "./components/ui/AboutMe";
+import Skills from "./components/ui/Skills";
+
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
 const useStyles = makeStyles(() => ({
@@ -51,13 +53,10 @@ function App() {
           <h1 className={classes.mainName}>Wei Peluso</h1>
         </div>
         <nav className={classes.nav}>
-          <a className={classes.links} href="#home">
-            <h2 className={classes.linkName}>Home</h2>
-          </a>
           <a className={classes.links} href="#about">
             <h2 className={classes.linkName}>About Me</h2>
           </a>
-          <a className={classes.links} href="#about2">
+          <a className={classes.links} href="#skills">
             <h2 className={classes.linkName}>Skills</h2>
           </a>
           <a className={classes.links} href="#projects">
@@ -75,8 +74,8 @@ function App() {
         <div id="about">
           <AboutMe />
         </div>
-        <div id="about2">
-          <AboutMe />
+        <div id="skills">
+          <Skills />
         </div>
       </div>
     </React.Fragment>
