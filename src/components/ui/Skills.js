@@ -7,18 +7,18 @@ import programming from "../../assets/programming.png";
 const useStyles = makeStyles(() => ({
   main: {
     paddingTop: "70px",
-    border: "2px solid red",
+    //border: "2px solid red",
     width: "100%",
     margin: "auto",
     textAlign: "center",
-    height: "100vh",
+    height: "50vh",
   },
   content: {
     display: "flex",
     justifyContent: "space-around",
   },
   section: {
-    border: "2px solid red",
+    // border: "2px solid red",
     width: "30%",
   },
 }));
@@ -42,7 +42,7 @@ const Skills = () => {
             <li>HTML/CSS</li>
             <li>JavaScript</li>
             <li>React</li>
-            <li>CSS Framworks(Materail Ui)</li>
+            <li>CSS Framworks(Materail-UI)</li>
             <li>Responsive Web Design</li>
           </ul>
         </div>
@@ -72,7 +72,7 @@ const Skills = () => {
           <ul>
             <li>Java</li>
             <li>Python</li>
-            <li>C Languages</li>
+            <li>C Language</li>
           </ul>
         </div>
       </div>

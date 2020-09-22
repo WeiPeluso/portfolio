@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import AboutMe from "./components/ui/AboutMe";
 import Skills from "./components/ui/Skills";
+import ContactMe from "./components/ui/ContactMe";
 
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
@@ -76,6 +77,9 @@ function App() {
         </div>
         <div id="skills">
           <Skills />
+        </div>
+        <div id="contact">
+          <ContactMe />
         </div>
       </div>
     </React.Fragment>
