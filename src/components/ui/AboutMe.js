@@ -1,7 +1,6 @@
 import React from "react";
 import main from "../../assets/main.svg";
 import { makeStyles } from "@material-ui/styles";
-import { Link } from "react-router-dom";
 
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
