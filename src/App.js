@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 import AboutMe from "./components/ui/AboutMe";
 import Skills from "./components/ui/Skills";
 import ContactMe from "./components/ui/ContactMe";
+import Projects from "./components/ui/Projects";
 
 const mainPurple = "#6C63FF";
 const mainPink = "#FF8684";
@@ -44,6 +45,18 @@ const useStyles = makeStyles(() => ({
     fontWeight: "700",
     fontSize: "1.2rem",
   },
+  footer: {
+    height: "8vh",
+    position: "relative",
+    color: mainPink,
+  },
+  footerP: {
+    margin: "0",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+  },
 }));
 function App() {
   const classes = useStyles();
@@ -78,9 +91,17 @@ function App() {
         <div id="skills">
           <Skills />
         </div>
+        <div id="projects">
+          <Projects />
+        </div>
         <div id="contact">
           <ContactMe />
         </div>
+        <footer className={classes.footer}>
+          <p className={classes.footerP}>
+            © 2020 Wei Peluso | Full Stack Web Developer | Personal Portfolio
+          </p>
+        </footer>
       </div>
     </React.Fragment>
   );
