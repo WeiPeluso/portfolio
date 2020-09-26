@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
   mainName: {
     color: "#D3D0FF",
     letterSpacing: ".2rem",
-    fontSize: "3rem",
+    fontSize: "6rem",
     fontFamily: "Montserrat",
     fontWeight: "800",
   },
@@ -43,7 +43,7 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Raleway",
     textTransform: "None",
     fontWeight: "700",
-    fontSize: "1.2rem",
+    fontSize: "2rem",
   },
   footer: {
     height: "8vh",

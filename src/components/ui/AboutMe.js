@@ -7,7 +7,7 @@ const mainPink = "#FF8684";
 
 const useStyles = makeStyles(() => ({
   main: {
-    //border: "2px solid red",
+    // border: "2px solid red",
     position: "relative",
     paddingTop: "70px",
     display: "flex",
@@ -19,18 +19,19 @@ const useStyles = makeStyles(() => ({
     height: "900px",
   },
   mainImg: {
-    //  border: "2px solid red",
     width: "100%",
-    height: "400px",
+    height: "40rem",
+    // border: "2px solid green",
   },
   mainContent: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "space-around",
     flexDirection: "column",
-    // border: "2px solid green",
-    height: "450px",
+    //border: "2px solid green",
     fontFamily: "fira code",
     letterSpacing: ".1rem",
+    height: "30rem",
   },
 
   paragraph: {
@@ -39,9 +40,20 @@ const useStyles = makeStyles(() => ({
     fontFamily: "Raleway",
     textTransform: "None",
     fontWeight: "700",
-    fontSize: "2rem",
+    fontSize: "2.5rem",
     letterSpacing: ".2rem",
-    //  border: "2px solid red",
+    height: "25rem",
+    //border: "2px solid red",
+    textAlign: "center",
+    color: "#777",
+  },
+
+  intro: {
+    display: "block",
+    marginBottom: "2rem",
+  },
+  details: {
+    display: "block",
   },
   button: {
     display: "inline-block",
@@ -52,7 +64,7 @@ const useStyles = makeStyles(() => ({
     color: "#D3D0FF",
     fontFamily: "Raleway",
     fontWeight: "700",
-    fontSize: "1.4rem",
+    fontSize: "3rem",
     borderRadius: "100px",
     "&:hover": {
       color: mainPink,
@@ -73,15 +85,15 @@ const AboutMe = () => {
         <img className={classes.mainImg} alt="web developer" src={main} />
       </div>
       <div className={classes.mainContent}>
-        <h2>
-          Hi, I am <strong> Wei Pelsuo</strong>
-        </h2>
         <p className={classes.paragraph}>
-          <br />I am a full stack web developer with a computer science degree
-          from Rutgers University-New Brunswick, and I am passionate about
-          designing and developing web apps. I am eager to practice mine
-          knowledge and determination, turn information into action and bring
-          ideas to real life.
+          <span className={classes.intro}>Hi, I am Wei Pelsuo.</span>
+          <span className={classes.details}>
+            I am a full stack web developer with a computer science degree from
+            Rutgers University-New Brunswick, and I am passionate about
+            designing and developing web apps. I am eager to practice mine
+            knowledge and determination, turn information into action and bring
+            ideas to real life.
+          </span>
         </p>
         <a href="#resume" className={classes.button}>
           Resume
