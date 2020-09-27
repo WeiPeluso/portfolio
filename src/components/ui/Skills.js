@@ -22,6 +22,7 @@ const useStyles = makeStyles(() => ({
     letterSpacing: ".2rem",
     textTransform: "uppercase",
     color: "#777",
+    marginBottom: "5rem",
   },
   content: {
     display: "flex",
