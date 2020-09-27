@@ -4,6 +4,9 @@ import frontend from "../../assets/frontend.png";
 import backend from "../../assets/backend.png";
 import programming from "../../assets/programming.png";
 
+const lightPurple = "#9999ff";
+const mainPink = "#FF8684";
+
 const useStyles = makeStyles(() => ({
   main: {
     paddingTop: "70px",
@@ -12,14 +15,29 @@ const useStyles = makeStyles(() => ({
     margin: "auto",
     textAlign: "center",
     height: "50vh",
+    fontFamily: "fira code",
+  },
+  header: {
+    fontSize: "4rem",
+    letterSpacing: ".2rem",
+    textTransform: "uppercase",
+    color: "#777",
   },
   content: {
     display: "flex",
     justifyContent: "space-around",
   },
   section: {
-    // border: "2px solid red",
+    paddingTop: "2rem",
+    paddingBottom: "2rem",
     width: "30%",
+    backgroundColor: "#F0F8FF",
+    fontSize: "2rem",
+    color: "#696969",
+  },
+  hr: {
+    width: "90%",
+    fontSize: "5rem",
   },
 }));
 
@@ -27,7 +45,7 @@ const Skills = () => {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <h2>Skills Set</h2>
+      <h2 className={classes.header}>Skills Set</h2>
       <div className={classes.content}>
         <div className={classes.section}>
           <img alt="frontend" src={frontend} />
@@ -36,7 +54,7 @@ const Skills = () => {
             <br />
             Development
           </h3>
-          <hr />
+          <hr className={classes.hr} />
 
           <ul>
             <li>HTML/CSS</li>
@@ -53,7 +71,7 @@ const Skills = () => {
             <br />
             Development
           </h3>
-          <hr />
+          <hr className={classes.hr} />
           <ul>
             <li>Node.js</li>
             <li>Express</li>
@@ -67,7 +85,7 @@ const Skills = () => {
           <h3>
             Programming
             <br /> Languages
-            <hr />
+            <hr className={classes.hr} />
           </h3>
           <ul>
             <li>Java</li>

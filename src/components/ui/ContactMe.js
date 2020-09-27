@@ -9,6 +9,9 @@ const useStyle = makeStyles(() => ({
     backgroundColor: lightPurple,
     textAlign: "center",
     color: "#f2f2f2",
+    fontSize: "1.8rem",
+    paddingTop: "5rem",
+    letterSpacing: ".1rem",
   },
 }));
 
