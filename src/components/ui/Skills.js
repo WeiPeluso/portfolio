@@ -4,9 +4,6 @@ import frontend from "../../assets/frontend.png";
 import backend from "../../assets/backend.png";
 import programming from "../../assets/programming.png";
 
-const lightPurple = "#9999ff";
-const mainPink = "#FF8684";
-
 const useStyles = makeStyles(() => ({
   main: {
     paddingTop: "70px",
