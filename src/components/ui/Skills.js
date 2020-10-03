@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
   header: {
     fontSize: "4rem",
     letterSpacing: ".2rem",
-    textTransform: "uppercase",
+    textTransform: "capitalize",
     color: "#777",
     marginBottom: "5rem",
   },

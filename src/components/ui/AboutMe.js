@@ -57,7 +57,7 @@ const useStyles = makeStyles(() => ({
   },
   button: {
     display: "inline-block",
-    textTransform: "uppercase",
+    textTransform: "capitalize",
     textDecoration: "none",
     padding: "20px 75px",
     backgroundColor: mainPurple,

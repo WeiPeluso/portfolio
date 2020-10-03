@@ -49,7 +49,7 @@ const useStyles = makeStyles(() => ({
     height: "8vh",
     position: "relative",
     color: mainPink,
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   },
   footerP: {
     margin: "0",
